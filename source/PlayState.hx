@@ -900,8 +900,8 @@ class PlayState extends MusicBeatState
 		iconP2.visible = !ClientPrefs.hideHud;
 		add(iconP2);
 		reloadHealthBarColors();
-        
-        var creditTxt:FlxText = new FlxText(4,healthBarBG.y + 20,0,("OPTIMIZED BY NT846 "), 24);
+		
+        creditTxt:FlxText = new FlxText(4,healthBarBG.y + 20,0,("OPTIMIZED BY NT846 "), 24);
         creditTxt.scrollFactor.set();
         creditTxt.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         creditTxt.borderColor = FlxColor.BLACK;
