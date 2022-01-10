@@ -900,7 +900,15 @@ class PlayState extends MusicBeatState
 		iconP2.visible = !ClientPrefs.hideHud;
 		add(iconP2);
 		reloadHealthBarColors();
-
+        
+        var creditTxt:FlxText = new FlxText(4,healthBarBG.y + 20,0,("OPTIMIZED BY NT846 "), 24);
+        creditTxt.scrollFactor.set();
+        creditTxt.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+        creditTxt.borderColor = FlxColor.BLACK;
+        creditTxt.borderSize = 3;
+        creditTxt.borderStyle = FlxTextBorderStyle.OUTLINE;
+        add(creditTxt);
+        
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
@@ -908,7 +916,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "NT846", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
